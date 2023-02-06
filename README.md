@@ -11,6 +11,10 @@ VALUES
 
 EX2
 
+UPDATE terms
+SET terms_description = 'Net due 125 days'
+WHERE terms_description = 'Net due 120 days'
+
 ![Ch5_ex2_results](https://user-images.githubusercontent.com/122377083/216854258-d5df9b63-f070-4611-8e7c-b8a1888cad5c.png)
 
 EX3

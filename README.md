@@ -2,6 +2,8 @@
 
 EX1
 
+This inserted a row with the specified values.
+
 INSERT INTO terms
   (terms_id, terms_description, terms_due_days)
 VALUES
@@ -11,6 +13,8 @@ VALUES
 
 EX2
 
+This updated the terms-description numerical value from 120 to 125.
+
 UPDATE terms
 SET terms_description = 'Net due 125 days'
 WHERE terms_description = 'Net due 120 days'
@@ -19,12 +23,16 @@ WHERE terms_description = 'Net due 120 days'
 
 EX3
 
+This deleted the row previously added.
+
 DELETE FROM terms
 WHERE terms_id = 6
 
 ![Ch5_ex3_results](https://user-images.githubusercontent.com/122377083/216854265-9f7ba27d-364c-46fd-85dd-b547fd1dbaf1.png)
 
 EX4
+
+This inserted a row into invoices with the specified values.
 
 INSERT INTO invoices VALUES
 (DEFAULT, 32, 'AX-014-027', '8/1/2018', '434.58', DEFAULT, DEFAULT, 2, '8/31/2018', NULL)

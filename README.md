@@ -72,6 +72,12 @@ WHERE vendor_id = 44
 
 EX8
 
+This updated all the terms_id in invoices to 2 where default_terms_id equaled 2 in the vendors table.
+
+UPDATE invoices
+SET terms_id = 2
+WHERE vendor_id IN (SELECT vendor_id FROM vendors WHERE default_terms_id = 2) 
+
 ![Ch5_ex8_results](https://user-images.githubusercontent.com/122377083/216854338-9940e32a-b7b3-47fa-9f78-d5658f6f8640.png)
 
 EX9

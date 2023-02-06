@@ -51,6 +51,13 @@ INSERT INTO invoice_line_items VALUES
 
 EX6
 
+This updated the credit_total to be 10% of invoice_total and payment_total was updated to equal the invoice_total when added to credit_total.
+
+UPDATE invoices
+SET credit_total = invoice_total * .1,
+	payment_total = invoice_total - credit_total
+WHERE invoice_id = 115
+
 ![Ch5_ex6-results](https://user-images.githubusercontent.com/122377083/216854301-a50c7f84-aaec-436b-9dfc-698e8cd6c8e1.png)
 
 EX7

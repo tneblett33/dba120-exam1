@@ -2,6 +2,11 @@
 
 EX1
 
+INSERT INTO terms
+  (terms_id, terms_description, terms_due_days)
+VALUES
+  (6, 'Net due 120 days', 120)
+
 ![Ch5_ex1_results](https://user-images.githubusercontent.com/122377083/216854246-da663a43-bc01-4e04-9d31-cea63e8cb91f.png)
 
 EX2

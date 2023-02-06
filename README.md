@@ -26,6 +26,9 @@ WHERE terms_id = 6
 
 EX4
 
+INSERT INTO invoices VALUES
+(DEFAULT, 32, 'AX-014-027', '8/1/2018', '434.58', DEFAULT, DEFAULT, 2, '8/31/2018', NULL)
+
 ![Ch5_ex4_results](https://user-images.githubusercontent.com/122377083/216854279-14271fda-ec59-4cc8-acef-f349f6fd3351.png)
 
 EX5

@@ -62,6 +62,12 @@ WHERE invoice_id = 115
 
 EX7
 
+This updated the default_account_number to 403 where vendor_id was 44.
+
+UPDATE vendors
+SET default_account_number = 403
+WHERE vendor_id = 44
+
 ![Ch5_ex7_results](https://user-images.githubusercontent.com/122377083/216854320-834ba004-5fbb-4e8b-90ad-5a76d8e8e7da.png)
 
 EX8

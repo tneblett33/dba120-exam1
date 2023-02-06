@@ -82,4 +82,11 @@ WHERE vendor_id IN (SELECT vendor_id FROM vendors WHERE default_terms_id = 2)
 
 EX9
 
+This deleted the two previously added rows in invoice_line items and one previously added row in invoices.
+
+DELETE FROM invoice_line_items
+WHERE invoice_id = 115;
+DELETE FROM invoices
+WHERE invoice_id = 115;
+
 ![Ch5_ex9_results](https://user-images.githubusercontent.com/122377083/216854345-2cbef504-756c-4bcf-a96b-8358fa4f2225.png)

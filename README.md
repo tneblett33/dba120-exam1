@@ -19,6 +19,9 @@ WHERE terms_description = 'Net due 120 days'
 
 EX3
 
+DELETE FROM terms
+WHERE terms_id = 6
+
 ![Ch5_ex3_results](https://user-images.githubusercontent.com/122377083/216854265-9f7ba27d-364c-46fd-85dd-b547fd1dbaf1.png)
 
 EX4
